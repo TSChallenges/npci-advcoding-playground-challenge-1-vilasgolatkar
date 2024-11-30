@@ -18,17 +18,25 @@ class StockPortfolio {
     // TODO: Update current market price
     public void updatePrice(double newPrice) {
         // TODO
+        if (newPrice > 0)
+        {
+            highestPrice = newPrice;
+            currentPrice = newPrice;
+        }
     }
 
     // TODO: Calculate total profit or loss
     public double calculateProfit() {
         // TODO
-        return 0.0;
+       double profit = (currentPrice - buyingPrice) * quantity;
+        
+        return profit;
     }
 
     // TODO: Calculate current total value of holdings
     public double getCurrentValue() {
         // TODO
-        return 0.0;
+        double totalHolding = currentPrice * quantity;
+        return totalHolding;
     }
 }
