@@ -4,6 +4,7 @@ class StockPortfolio {
     private int quantity;
     private double buyingPrice;
     private double currentPrice;
+    private double highestPrice;
 
     // TODO: Initialize stock details
     public StockPortfolio(String symbol, int quantity, double buyingPrice) {
