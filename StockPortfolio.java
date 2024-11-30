@@ -12,7 +12,7 @@ class StockPortfolio {
         this.quantity = quantity;
         this.buyingPrice = buyingPrice;
         this.currentPrice = buyingPrice;
-        this.symbol = symbol;
+        this.highetPrice = highetPrice;
     }
 
     // TODO: Update current market price
